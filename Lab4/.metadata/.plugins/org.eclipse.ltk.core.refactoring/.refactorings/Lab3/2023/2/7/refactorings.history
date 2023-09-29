@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;dictionary.txt&apos; to &apos;lab4&apos;&#x0D;&#x0A;- Original project: &apos;Lab3&apos;&#x0D;&#x0A;- Destination element: &apos;lab4&apos;&#x0D;&#x0A;- Original element: &apos;dictionary.txt&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" destination="=lab4" element1="dictionary.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1676373127821" units="0" version="1.0"/>
+</session>

@@ -1,0 +1,20 @@
+package ie.atu.sw;
+
+import java.time.LocalDate;
+import java.util.Objects;
+
+public class Ninja implements Cloneable{
+	private long id;
+	private String name;
+	private LocalDate dob;
+	private int level;
+	
+	
+
+	
+	
+	
+	
+	
+	
+}

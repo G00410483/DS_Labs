@@ -1,0 +1,6 @@
+INDEX VERSION 1.131+C:\Users\g00410483\OneDrive - Atlantic TU\2nd Year\Data Structures and Algorithms\Lab4\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+1259207542.index
+39645565.index
+1336263651.index
+1007340512.index

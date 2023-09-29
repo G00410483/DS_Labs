@@ -1,0 +1,34 @@
+package ie.atu.sw;
+
+import java.util.*;
+import java.io.*;
+
+/* The Dictionary class has been altered to provide a choice of two data structures to use
+ * for a word search - an array list and a hash table.
+ */
+public class Dictionary {
+	private List<Word> wordList = new ArrayList<>(); //Instance variable of type List (an interface)
+	private final String DICTIONARY_FILE = "dictonary.txt"; //A string instance variable
+	
+	public void load() throws Exception{ //If anything goes wrong, throw the exception to the calling method. Very lazy indeed!
+		//Called a try-with-resources. Automatically calls br.close() to close any in/out streams.
+		try (var br = new BufferedReader(new InputStreamReader(new FileInputStream(DICTIONARY_FILE)))){
+			String next;
+			while ((next = br.readLine()) != null) { //Loop through each line in the dictionary file
+				 Word word = new Word(next); //Create a new Word object using the next word in the dictionary
+				 wordList.add(word); //Add the word to our array list
+			}
+			Collections.shuffle(wordList); //Randomly shuffle list with a Fisher-Yeats Shuffle 
+		} catch (Exception e) {
+			throw new Exception("[ERROR] Encountered a problem reading the dictionary. " + e.getMessage());		
+		}
+	}
+	
+	public int size(){
+		return wordList.size();
+	}
+	
+	public Word[] getShuffledWords(){
+		return wordList.stream().toArray(Word[]::new); //Stream version of wordList.toArray(new Word[wordList.size()])
+	}
+}

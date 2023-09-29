@@ -1,0 +1,14 @@
+package ie.atu.sw;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		var list = new SingleLinkedList<String>();
+		list.add("Galway");
+		list.add("Sligo");
+		list.add("Mayo");
+		list.add(2, "Donegal");
+
+	}
+
+}

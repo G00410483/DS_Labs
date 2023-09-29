@@ -1,0 +1,25 @@
+package ie.atu.sw;
+
+import java.util.LinkedList;
+
+public class Runner {
+
+	public static void main(String[] args) {
+		var list = new LinkedList<String>();
+		list.add("Galway");
+		list.add("Sligo");
+		list.add("Mayo");
+		list.add(2, "Donegal");
+		
+		java.util.Iterator<String> i = list.iterator();
+		while(i.hasNext()){
+		 System.out.println(i.next());
+		}
+		for(String s: list) {
+			System.out.println(s);
+			
+		}
+		System.out.println(list.getFirst());
+	}
+
+}
